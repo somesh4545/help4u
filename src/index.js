@@ -162,15 +162,20 @@ function StyledDropzone(props) {
           Open File Dialog
         </button>
       </div>
-      <div className="resultBox">
-        <button className="btn" onClick={send}>
-          Read image
-        </button>
+      <div>
         {result != null ? (
-          <button className="btn" onClick={copyToClipboard}>
-            copy
-          </button>
+          <textarea rows="10" className="btn" value={result} />
         ) : null}
+        <div className="resultBox">
+          <button className="btn" onClick={send}>
+            Read image
+          </button>
+          {result != null ? (
+            <button className="btn" onClick={copyToClipboard}>
+              copy
+            </button>
+          ) : null}
+        </div>
       </div>
 
       {/* <aside>

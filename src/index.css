@@ -22,10 +22,12 @@ code {
   border-radius: 10px;
   background-color: black;
   padding: 10px 15px;
+  margin: 10px;
 }
 
 .resultBox {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   margin-top: 10px;
 }
